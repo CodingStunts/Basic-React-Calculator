@@ -1,71 +1,40 @@
 import "./App.css";
 import React, { useState } from "react";
+import MakeNumberButtons from "./components/numbers-buttons.js";
+import MakeOperationButtons from "./components/operations-buttons.js";
 
 function App() {
   let [display, setDisplay] = useState(0);
 
-  const concatInput = (digit) => {
+  const concatDisplay = (digit) => {
     setDisplay((oldDisplay) => {
-      console.log(oldDisplay);
-      /*       if (oldDisplay === "0") {
-        console.log("hello");
-        return oldDisplay.unshift([0]);
-      } else { */
-      return String(oldDisplay) + String(digit);
-      //}
+      return oldDisplay.toString() + digit.toString();
     });
   };
 
-  const numberButtons = [
-    { 0: 0 },
-    { 1: 1 },
-    { 2: 2 },
-    { 3: 3 },
-    { 4: 4 },
-    { 5: 5 },
-    { 6: 6 },
-    { 7: 7 },
-    { 8: 8 },
-    { 9: 9 },
-  ];
-
-  let operationButtons = [
-    { 0: "-" },
-    { 1: "+" },
-    { 2: "/" },
-    { 3: "*" },
-    { 4: "." },
-    { 5: "AC" },
-    { 6: "=" },
-  ];
-
-  const MakeNumberButtons = () => {
-    return (
-      <div>
-        <h1>Buttons</h1>
-        {numberButtons.map((button, i) => (
-          <button onClick={() => concatInput(button[i])}>{button[i]}</button>
-        ))}
-      </div>
-    );
-  };
-
-  const MakeOperationButtons = () => {
-    return (
-      <div>
-        {operationButtons.map((button, i) => (
-          <button onClick={() => concatInput(button[i])}>{button[i]}</button>
-        ))}
-      </div>
-    );
+  const makeNil = () => {
+    setDisplay((oldDisplay) => {
+      return 0;
+    });
   };
 
   return (
     <div className="App">
       <h1>Calculator</h1>
       <label>{display}</label>
-      <MakeNumberButtons />
-      <MakeOperationButtons />
+      <MakeNumberButtons concatDisplay={concatDisplay} />
+      <MakeOperationButtons concatDisplay={concatDisplay} />
+      <button id="equals">=</button>
+      <button
+        id="AC"
+        onClick={() =>
+          makeNil(() => {
+            return 0;
+          })
+        }
+      >
+        AC
+      </button>
     </div>
   );
 }
