@@ -25,9 +25,13 @@ function App() {
   const equals = () => {
     setDisplay((oldDisplay) => {
       try {
+        oldDisplay = oldDisplay.replace("×", "*");
+        oldDisplay = oldDisplay.replace("÷", "/");
+
         return eval(oldDisplay);
       } catch (error) {
         makeNil();
+        console.log(error);
         alert("syntax error");
       }
     });
@@ -36,7 +40,7 @@ function App() {
   return (
     <div className="App">
       <title>Calculator</title>
-      <h1>Calculator</h1>
+
       <div id="display-window">
         <label id="display">{display}</label>
       </div>

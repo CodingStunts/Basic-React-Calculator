@@ -3,27 +3,58 @@
 }
 
 body {
-  background-color: #88cadd;
+  background-color: #ffe6ce;
   position: relative;
 }
 
 #display {
-  font-size: 32px;
+  font-size: 50px;
+  padding-right: 2.5%;
+  color: white;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 1.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ffb703;
+  }
 }
 
 #display-window {
+  margin-top: 60px;
+
+  text-align: right;
   background-color: #79a2d8;
   border-style: inset;
   border-color: #8fb8de;
   border-width: 3px;
-  width: 400px;
+  width: 375px;
   position: absolute;
-  left: 300px;
-  border-radius: 15%;
+  left: 310px;
+  border-radius: 15px;
 }
 
 .num-buttons {
-  border: 5px;
+  border: 3px;
   border-radius: 100%;
   margin: 5px;
   border-style: solid;
@@ -32,50 +63,55 @@ body {
   font-size: 32px;
   color: white;
   position: relative;
-  width: 75px;
-  height: 75px;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
 }
 
 .op-buttons {
-  border: 5px;
+  border: 3px;
   border-radius: 100%;
   margin: 5px;
   border-style: solid;
   border-color: white;
   background-color: #8fb8de;
-  font-size: 32px;
+  font-size: 50px;
   color: white;
   position: relative;
-  width: 75px;
-  height: 75px;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
 }
 
 #equals {
-  border: 5px;
+  border: 3px;
   border-radius: 100%;
   margin: 5px;
   border-style: solid;
   border-color: white;
   background-color: #8fb8de;
-  font-size: 32px;
+  font-size: 50px;
   color: white;
   position: relative;
-  width: 75px;
-  height: 75px;
+  width: 90px;
+  height: 90px;
+  background-color: #4d4dff;
+  cursor: pointer;
 }
 
 #C {
-  border: 5px;
+  border: 3px;
   border-radius: 100%;
   margin: 5px;
   border-style: solid;
   border-color: white;
-  background-color: #8fb8de;
-  font-size: 32px;
+  background-color: #ffb703;
+  font-size: 42px;
   color: white;
   position: relative;
-  width: 75px;
-  height: 75px;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
 }
 
 #button-0 {
@@ -160,33 +196,39 @@ body {
   position: absolute;
   left: 400px;
   top: 150px;
+  background-color: #4d4dff;
 }
 
 #op-button-6 {
   position: absolute;
   left: 500px;
   top: 150px;
+  background-color: #4d4dff;
 }
 
 #op-button-2 {
+  background-color: #4d4dff;
   position: absolute;
   left: 600px;
   top: 150px;
 }
 
 #op-button-3 {
+  background-color: #4d4dff;
   position: absolute;
   left: 600px;
   top: 250px;
 }
 
 #op-button-0 {
+  background-color: #4d4dff;
   position: absolute;
   left: 600px;
   top: 350px;
 }
 
 #op-button-1 {
+  background-color: #4d4dff;
   position: absolute;
   left: 600px;
   top: 450px;
