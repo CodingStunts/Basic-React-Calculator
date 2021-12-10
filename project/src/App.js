@@ -35,17 +35,19 @@ function App() {
 
   return (
     <div className="App">
-      <title>calculator</title>
+      <title>Calculator</title>
       <h1>Calculator</h1>
-      <label>{display}</label>
+      <div id="display-window">
+        <label id="display">{display}</label>
+      </div>
       <MakeNumberButtons concatDisplay={concatDisplay} />
       <MakeOperationButtons concatDisplay={concatDisplay} />
 
       <button id="equals" onClick={() => equals()}>
         =
       </button>
-      <button id="AC" onClick={() => makeNil()}>
-        AC
+      <button id="C" onClick={() => makeNil()}>
+        C
       </button>
     </div>
   );

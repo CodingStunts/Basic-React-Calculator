@@ -12,7 +12,13 @@ const MakeOperationButtons = ({ concatDisplay }) => {
   return (
     <div>
       {operationButtons.map((button, i) => (
-        <button onClick={() => concatDisplay(button[i])}>{button[i]}</button>
+        <button
+          id={`op-button-${i}`}
+          className="op-buttons"
+          onClick={() => concatDisplay(button[i])}
+        >
+          {button[i]}
+        </button>
       ))}
     </div>
   );

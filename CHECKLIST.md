@@ -1,8 +1,8 @@
 # Planning
 
-- [ ] Outline the functionality of your app
-- [ ] Sketch the UI of your app
-- [ ] Break up the UI of your app into components
+- [x] Outline the functionality of your app
+- [x] Sketch the UI of your app
+- [x] Break up the UI of your app into components
 - [ ] Name your components
 - [ ] Draw out the component hierarchy
 - [ ] Decide on what data your application will need to hold in state - this should be minimal with no duplication of data

@@ -2,37 +2,192 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #88cadd;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#display {
+  font-size: 32px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#display-window {
+  background-color: #79a2d8;
+  border-style: inset;
+  border-color: #8fb8de;
+  border-width: 3px;
+  width: 400px;
+  position: absolute;
+  left: 300px;
+  border-radius: 15%;
+}
+
+.num-buttons {
+  border: 5px;
+  border-radius: 100%;
+  margin: 5px;
+  border-style: solid;
+  border-color: white;
+  background-color: #8fb8de;
+  font-size: 32px;
   color: white;
+  position: relative;
+  width: 75px;
+  height: 75px;
 }
 
-.App-link {
-  color: #61dafb;
+.op-buttons {
+  border: 5px;
+  border-radius: 100%;
+  margin: 5px;
+  border-style: solid;
+  border-color: white;
+  background-color: #8fb8de;
+  font-size: 32px;
+  color: white;
+  position: relative;
+  width: 75px;
+  height: 75px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#equals {
+  border: 5px;
+  border-radius: 100%;
+  margin: 5px;
+  border-style: solid;
+  border-color: white;
+  background-color: #8fb8de;
+  font-size: 32px;
+  color: white;
+  position: relative;
+  width: 75px;
+  height: 75px;
+}
+
+#C {
+  border: 5px;
+  border-radius: 100%;
+  margin: 5px;
+  border-style: solid;
+  border-color: white;
+  background-color: #8fb8de;
+  font-size: 32px;
+  color: white;
+  position: relative;
+  width: 75px;
+  height: 75px;
+}
+
+#button-0 {
+  position: absolute;
+  left: 300px;
+  top: 550px;
+}
+
+#op-button-4 {
+  position: absolute;
+  left: 500px;
+  top: 550px;
+}
+
+#equals {
+  position: absolute;
+  left: 600px;
+  top: 550px;
+}
+
+#button-1 {
+  position: absolute;
+  left: 300px;
+  top: 450px;
+}
+
+#button-2 {
+  position: absolute;
+  left: 400px;
+  top: 450px;
+}
+
+#button-3 {
+  position: absolute;
+  left: 500px;
+  top: 450px;
+}
+
+#button-4 {
+  position: absolute;
+  left: 300px;
+  top: 350px;
+}
+
+#button-5 {
+  position: absolute;
+  left: 400px;
+  top: 350px;
+}
+
+#button-6 {
+  position: absolute;
+  left: 500px;
+  top: 350px;
+}
+
+#button-7 {
+  position: absolute;
+  left: 300px;
+  top: 250px;
+}
+
+#button-8 {
+  position: absolute;
+  left: 400px;
+  top: 250px;
+}
+
+#button-9 {
+  position: absolute;
+  left: 500px;
+  top: 250px;
+}
+
+#C {
+  position: absolute;
+  left: 300px;
+  top: 150px;
+}
+
+#op-button-5 {
+  position: absolute;
+  left: 400px;
+  top: 150px;
+}
+
+#op-button-6 {
+  position: absolute;
+  left: 500px;
+  top: 150px;
+}
+
+#op-button-2 {
+  position: absolute;
+  left: 600px;
+  top: 150px;
+}
+
+#op-button-3 {
+  position: absolute;
+  left: 600px;
+  top: 250px;
+}
+
+#op-button-0 {
+  position: absolute;
+  left: 600px;
+  top: 350px;
+}
+
+#op-button-1 {
+  position: absolute;
+  left: 600px;
+  top: 450px;
 }
