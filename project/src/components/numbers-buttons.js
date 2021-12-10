@@ -14,7 +14,6 @@ const numberButtons = [
 const MakeNumberButtons = ({ concatDisplay }) => {
   return (
     <div>
-      <h1>Buttons</h1>
       {numberButtons.map((button, i) => (
         <button onClick={() => concatDisplay(button[i])}>{button[i]}</button>
       ))}
