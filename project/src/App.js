@@ -55,6 +55,13 @@ function App() {
           </button>
         </div>
       </section>
+      <div id="text-box">
+        <h1>React Calculator</h1>
+        <p>
+          This is a React calculator I made during my coding bootcamp while pair
+          programming, as we tried out React for the first couple of times.
+        </p>
+      </div>
     </div>
   );
 }
