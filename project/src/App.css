@@ -3,7 +3,10 @@
 }
 
 body {
-  background-color: #ffe6ce;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #cba1e7;
   position: relative;
 }
 
@@ -41,7 +44,6 @@ body {
 
 #display-window {
   margin-top: 60px;
-
   text-align: right;
   background-color: #79a2d8;
   border-style: inset;
@@ -49,7 +51,7 @@ body {
   border-width: 3px;
   width: 375px;
   position: absolute;
-  left: 310px;
+  left: 20px;
   border-radius: 15px;
 }
 
@@ -62,7 +64,6 @@ body {
   background-color: #8fb8de;
   font-size: 32px;
   color: white;
-  position: relative;
   width: 90px;
   height: 90px;
   cursor: pointer;
@@ -77,7 +78,6 @@ body {
   background-color: #8fb8de;
   font-size: 50px;
   color: white;
-  position: relative;
   width: 90px;
   height: 90px;
   cursor: pointer;
@@ -92,7 +92,6 @@ body {
   background-color: #8fb8de;
   font-size: 50px;
   color: white;
-  position: relative;
   width: 90px;
   height: 90px;
   background-color: #4d4dff;
@@ -108,7 +107,6 @@ body {
   background-color: #ffb703;
   font-size: 42px;
   color: white;
-  position: relative;
   width: 90px;
   height: 90px;
   cursor: pointer;
@@ -116,92 +114,92 @@ body {
 
 #button-0 {
   position: absolute;
-  left: 300px;
+  left: 10px;
   top: 550px;
 }
 
 #op-button-4 {
   position: absolute;
-  left: 500px;
+  left: 210px;
   top: 550px;
 }
 
 #equals {
   position: absolute;
-  left: 600px;
+  left: 310px;
   top: 550px;
 }
 
 #button-1 {
   position: absolute;
-  left: 300px;
+  left: 10px;
   top: 450px;
 }
 
 #button-2 {
   position: absolute;
-  left: 400px;
+  left: 110px;
   top: 450px;
 }
 
 #button-3 {
   position: absolute;
-  left: 500px;
+  left: 210px;
   top: 450px;
 }
 
 #button-4 {
   position: absolute;
-  left: 300px;
+  left: 10px;
   top: 350px;
 }
 
 #button-5 {
   position: absolute;
-  left: 400px;
+  left: 110px;
   top: 350px;
 }
 
 #button-6 {
   position: absolute;
-  left: 500px;
+  left: 210px;
   top: 350px;
 }
 
 #button-7 {
   position: absolute;
-  left: 300px;
+  left: 10px;
   top: 250px;
 }
 
 #button-8 {
   position: absolute;
-  left: 400px;
+  left: 110px;
   top: 250px;
 }
 
 #button-9 {
   position: absolute;
-  left: 500px;
+  left: 210px;
   top: 250px;
 }
 
 #C {
   position: absolute;
-  left: 300px;
+  left: 10px;
   top: 150px;
 }
 
 #op-button-5 {
   position: absolute;
-  left: 400px;
+  left: 110px;
   top: 150px;
   background-color: #4d4dff;
 }
 
 #op-button-6 {
   position: absolute;
-  left: 500px;
+  left: 210px;
   top: 150px;
   background-color: #4d4dff;
 }
@@ -209,27 +207,27 @@ body {
 #op-button-2 {
   background-color: #4d4dff;
   position: absolute;
-  left: 600px;
+  left: 310px;
   top: 150px;
 }
 
 #op-button-3 {
   background-color: #4d4dff;
   position: absolute;
-  left: 600px;
+  left: 310px;
   top: 250px;
 }
 
 #op-button-0 {
   background-color: #4d4dff;
   position: absolute;
-  left: 600px;
+  left: 310px;
   top: 350px;
 }
 
 #op-button-1 {
   background-color: #4d4dff;
   position: absolute;
-  left: 600px;
+  left: 310px;
   top: 450px;
 }
