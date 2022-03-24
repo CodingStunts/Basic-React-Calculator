@@ -27,11 +27,10 @@ function App() {
       try {
         oldDisplay = oldDisplay.replace("×", "*");
         oldDisplay = oldDisplay.replace("÷", "/");
-
-        return eval(oldDisplay);
+        let result = eval(oldDisplay);
+        return result;
       } catch (error) {
         makeNil();
-        console.log(error);
         alert("syntax error");
       }
     });
@@ -47,10 +46,10 @@ function App() {
         <div id="buttons-section">
           <MakeNumberButtons concatDisplay={concatDisplay} />
           <MakeOperationButtons concatDisplay={concatDisplay} />
-          <button id="equals" onClick={() => equals()}>
+          <button id="equals" className="buttons" onClick={() => equals()}>
             =
           </button>
-          <button id="C" onClick={() => makeNil()}>
+          <button id="C" className="buttons" onClick={() => makeNil()}>
             C
           </button>
         </div>

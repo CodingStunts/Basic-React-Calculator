@@ -14,7 +14,7 @@ const MakeOperationButtons = ({ concatDisplay }) => {
       {operationButtons.map((button, i) => (
         <button
           id={`op-button-${i}`}
-          className="op-buttons"
+          className="buttons"
           onClick={() => concatDisplay(button[i])}
         >
           {button[i]}

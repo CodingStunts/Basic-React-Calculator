@@ -17,7 +17,7 @@ const MakeNumberButtons = ({ concatDisplay }) => {
       {numberButtons.map((button, i) => (
         <button
           id={`button-${i}`}
-          className="num-buttons"
+          className="buttons"
           onClick={() => concatDisplay(button[i])}
         >
           {button[i]}

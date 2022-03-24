@@ -19,12 +19,13 @@ body {
 
 #calculator {
   background-color: lightgrey;
+  border-radius: 25px;
+  border: inset 6px rgba(180, 180, 180, 0.774);
   position: absolute;
   left: 5px;
   top: 25px;
   width: 420px;
   height: 700px;
-  border-radius: 25px;
 }
 
 #display {
@@ -72,21 +73,8 @@ body {
   border-radius: 15px;
 }
 
-.num-buttons {
-  border: 3px;
-  border-radius: 100%;
-  margin: 5px;
-  border-style: solid;
-  border-color: white;
-  background-color: #8fb8de;
-  font-size: 32px;
-  color: white;
-  width: 90px;
-  height: 90px;
-  cursor: pointer;
-}
-
-.op-buttons {
+/* Buttons style and position */
+.buttons {
   border: 3px;
   border-radius: 100%;
   margin: 5px;
@@ -98,52 +86,31 @@ body {
   width: 90px;
   height: 90px;
   cursor: pointer;
+  box-shadow: 0 4px #999;
 }
-
-#equals {
-  border: 3px;
-  border-radius: 100%;
-  margin: 5px;
-  border-style: solid;
-  border-color: white;
-  background-color: #8fb8de;
-  font-size: 50px;
-  color: white;
-  width: 90px;
-  height: 90px;
-  background-color: #4d4dff;
-  cursor: pointer;
+.buttons:active {
+  background-color: #7ea3c5;
+  box-shadow: 0 1px #666;
+  transform: translateY(4px);
 }
 
 #C {
-  border: 3px;
-  border-radius: 100%;
-  margin: 5px;
-  border-style: solid;
-  border-color: white;
-  background-color: #ffb703;
-  font-size: 42px;
-  color: white;
-  width: 90px;
-  height: 90px;
-  cursor: pointer;
-}
-
-#button-0 {
   position: absolute;
   left: 10px;
-  top: 550px;
-}
-
-#op-button-4 {
-  position: absolute;
-  left: 210px;
-  top: 550px;
+  top: 150px;
+  background-color: #ffb703;
 }
 
 #equals {
   position: absolute;
   left: 310px;
+  top: 550px;
+  background-color: #4d4dff;
+}
+
+#button-0 {
+  position: absolute;
+  left: 10px;
   top: 550px;
 }
 
@@ -201,40 +168,9 @@ body {
   top: 250px;
 }
 
-#C {
-  position: absolute;
-  left: 10px;
-  top: 150px;
-}
+/* Operation Buttons */
 
-#op-button-5 {
-  position: absolute;
-  left: 110px;
-  top: 150px;
-  background-color: #4d4dff;
-}
-
-#op-button-6 {
-  position: absolute;
-  left: 210px;
-  top: 150px;
-  background-color: #4d4dff;
-}
-
-#op-button-2 {
-  background-color: #4d4dff;
-  position: absolute;
-  left: 310px;
-  top: 150px;
-}
-
-#op-button-3 {
-  background-color: #4d4dff;
-  position: absolute;
-  left: 310px;
-  top: 250px;
-}
-
+/* Minus */
 #op-button-0 {
   background-color: #4d4dff;
   position: absolute;
@@ -242,9 +178,49 @@ body {
   top: 350px;
 }
 
+/* Plus */
 #op-button-1 {
   background-color: #4d4dff;
   position: absolute;
   left: 310px;
   top: 450px;
+}
+
+/* Divide */
+#op-button-2 {
+  background-color: #4d4dff;
+  position: absolute;
+  left: 310px;
+  top: 150px;
+}
+
+/* Times */
+#op-button-3 {
+  background-color: #4d4dff;
+  position: absolute;
+  left: 310px;
+  top: 250px;
+}
+
+/* Point */
+#op-button-4 {
+  position: absolute;
+  left: 210px;
+  top: 550px;
+}
+
+/* Open Parenthesis */
+#op-button-5 {
+  position: absolute;
+  left: 110px;
+  top: 150px;
+  background-color: #4d4dff;
+}
+
+/* Close Parenthesis */
+#op-button-6 {
+  position: absolute;
+  left: 210px;
+  top: 150px;
+  background-color: #4d4dff;
 }
